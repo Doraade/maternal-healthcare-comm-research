@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Voice Matters — Maternal Healthcare Research Study</title>
+
+<!-- ── SEO & WhatsApp / Social Media Preview Tags ── -->
+<meta name="description" content="A PhD research study by Dorcas Adebayo, Liverpool Hope University. We are inviting migrant and refugee women to share their experiences of maternity care communication in the UK.">
+<meta name="author" content="Dorcas Adebayo, Liverpool Hope University">
+
+<!-- Open Graph — used by WhatsApp, Facebook, LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maternalhealthcarecommunicationresearch.tiiny.site/">
+<meta property="og:title" content="Your Voice Matters — Maternal Healthcare Research">
+<meta property="og:description" content="Are you a migrant or refugee woman who has received maternity care in the UK? Researcher Dorcas Adebayo at Liverpool Hope University would love to hear your experience. Takes 5 minutes to register.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1584515933487-779824d29309?w=1200&q=80">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Liverpool Hope University — PhD Research">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter Card (also used by some messaging apps) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Your Voice Matters — Maternal Healthcare Research">
+<meta name="twitter:description" content="Are you a migrant or refugee woman who has received maternity care in the UK? Share your experience in this PhD research study.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1584515933487-779824d29309?w=1200&q=80">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF7F2;
+    --warm-white: #FFFEF9;
+    --deep-teal: #1A4A47;
+    --mid-teal: #2D6E68;
+    --light-teal: #4A9E96;
+    --accent-gold: #C4913A;
+    --soft-gold: #E8C882;
+    --text-dark: #1C2B2A;
+    --text-mid: #3D5754;
+    --text-light: #6B8B88;
+    --border: #D4E4E2;
+    --error: #C0392B;
+    --yes-green: #2D6E68;
+    --no-red: #C0392B;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    background: var(--deep-teal);
+    padding: 48px 24px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: ''; position: absolute; top: -60px; right: -60px;
+    width: 240px; height: 240px; border-radius: 50%;
+    background: rgba(74,158,150,0.15);
+  }
+  .header::after {
+    content: ''; position: absolute; bottom: -40px; left: -40px;
+    width: 180px; height: 180px; border-radius: 50%;
+    background: rgba(196,145,58,0.10);
+  }
+  .header-inner { position: relative; z-index: 1; max-width: 660px; margin: 0 auto; }
+  .study-tag {
+    display: inline-block;
+    background: rgba(196,145,58,0.2); color: var(--soft-gold);
+    font-size: 11px; font-weight: 500; letter-spacing: 2px;
+    text-transform: uppercase; padding: 6px 16px;
+    border-radius: 20px; margin-bottom: 20px;
+    border: 1px solid rgba(196,145,58,0.3);
+  }
+  .header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(24px, 5vw, 38px); font-weight: 300;
+    color: #fff; line-height: 1.3; margin-bottom: 16px;
+  }
+  .header h1 em { font-style: italic; color: var(--soft-gold); }
+  .header p {
+    color: rgba(255,255,255,0.72); font-size: 14px;
+    font-weight: 300; line-height: 1.7;
+    max-width: 500px; margin: 0 auto 24px;
+  }
+  .researcher-tag {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 32px; padding: 8px 18px;
+    color: rgba(255,255,255,0.85); font-size: 13px;
+  }
+  .researcher-tag .dot {
+    width: 8px; height: 8px; background: var(--soft-gold);
+    border-radius: 50%; flex-shrink: 0;
+  }
+
+  /* ── PROGRESS BAR ── */
+  .progress-bar {
+    background: var(--mid-teal); padding: 14px 24px;
+    display: flex; justify-content: center; gap: 8px; align-items: center;
+    flex-wrap: wrap;
+  }
+  .step {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; color: rgba(255,255,255,0.5); font-weight: 400;
+  }
+  .step.active { color: #fff; }
+  .step.done { color: var(--soft-gold); }
+  .step-num {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 500;
+  }
+  .step.active .step-num { background: var(--accent-gold); color: #fff; }
+  .step.done .step-num { background: var(--soft-gold); color: var(--deep-teal); }
+  .step-divider { width: 24px; height: 1px; background: rgba(255,255,255,0.2); }
+
+  /* ── PAGES ── */
+  .page { display: none; }
+  .page.active { display: block; }
+
+  /* ── CONTAINER ── */
+  .container { max-width: 680px; margin: 0 auto; padding: 40px 24px 80px; }
+
+  /* ── CARDS ── */
+  .card {
+    background: var(--warm-white); border: 1px solid var(--border);
+    border-radius: 12px; padding: 32px; margin-bottom: 24px;
+  }
+
+  .section-label {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 20px;
+  }
+  .section-icon {
+    width: 36px; height: 36px; background: var(--deep-teal);
+    border-radius: 8px; display: flex; align-items: center;
+    justify-content: center; font-size: 16px; flex-shrink: 0;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; font-weight: 600; color: var(--deep-teal);
+  }
+
+  /* ── INFORMATION SHEET ── */
+  .info-section { margin-bottom: 28px; }
+  .info-section:last-child { margin-bottom: 0; }
+
+  .info-question {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px; font-weight: 600; color: var(--deep-teal);
+    margin-bottom: 10px; padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .info-text {
+    font-size: 14px; line-height: 1.8; color: var(--text-mid);
+  }
+
+  .info-text ul {
+    padding-left: 20px; margin-top: 8px;
+  }
+
+  .info-text li { margin-bottom: 6px; }
+
+  .info-text strong { color: var(--deep-teal); }
+
+  .uni-header {
+    text-align: center; margin-bottom: 28px;
+    padding-bottom: 20px; border-bottom: 2px solid var(--border);
+  }
+  .uni-header .uni-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px; font-weight: 600; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--text-light);
+    margin-bottom: 8px;
+  }
+  .uni-header .doc-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px; font-weight: 600; color: var(--deep-teal);
+  }
+  .uni-header .study-title {
+    font-size: 13px; color: var(--text-mid);
+    font-style: italic; margin-top: 6px; line-height: 1.5;
+  }
+
+  /* download button */
+  .download-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--deep-teal); color: #fff;
+    padding: 11px 20px; border-radius: 8px;
+    text-decoration: none; font-size: 13px; font-weight: 500;
+    transition: all 0.2s; border: none; cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .download-btn:hover { background: var(--mid-teal); }
+
+  .download-row {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px;
+    background: rgba(26,74,71,0.05); border: 1px solid var(--border);
+    border-radius: 8px; padding: 16px 20px; margin-bottom: 24px;
+  }
+  .download-row p { font-size: 13px; color: var(--text-mid); }
+
+  /* warning box */
+  .warning-box {
+    background: rgba(192,57,43,0.06); border: 1px solid rgba(192,57,43,0.2);
+    border-left: 4px solid var(--error); border-radius: 8px;
+    padding: 16px 20px; font-size: 13px; color: var(--text-mid);
+    line-height: 1.7; margin-top: 20px;
+  }
+  .warning-box strong { color: var(--error); }
+
+  /* ── CONSENT FORM ── */
+  .consent-statement {
+    border: 1.5px solid var(--border); border-radius: 10px;
+    padding: 20px 22px; margin-bottom: 16px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .consent-statement.answered-yes {
+    border-color: var(--yes-green);
+    background: rgba(45,110,104,0.04);
+  }
+  .consent-statement.answered-no {
+    border-color: var(--no-red);
+    background: rgba(192,57,43,0.04);
+  }
+
+  .statement-text {
+    font-size: 14px; line-height: 1.75; color: var(--text-dark);
+    margin-bottom: 14px; font-weight: 400;
+  }
+
+  .statement-num {
+    display: inline-block;
+    background: var(--deep-teal); color: #fff;
+    font-size: 11px; font-weight: 500;
+    padding: 2px 8px; border-radius: 4px;
+    margin-right: 6px; margin-bottom: 8px;
+  }
+
+  .yn-buttons { display: flex; gap: 10px; }
+
+  .yn-btn {
+    flex: 1; padding: 10px; border-radius: 8px;
+    font-family: 'DM Sans', sans-serif; font-size: 14px;
+    font-weight: 500; cursor: pointer; transition: all 0.15s;
+    border: 1.5px solid var(--border); background: #fff;
+    color: var(--text-mid);
+  }
+  .yn-btn.yes-btn:hover { border-color: var(--yes-green); color: var(--yes-green); }
+  .yn-btn.no-btn:hover { border-color: var(--no-red); color: var(--no-red); }
+  .yn-btn.selected-yes {
+    background: var(--yes-green); border-color: var(--yes-green);
+    color: #fff;
+  }
+  .yn-btn.selected-no {
+    background: var(--no-red); border-color: var(--no-red);
+    color: #fff;
+  }
+
+  .consent-alert {
+    display: none; background: rgba(192,57,43,0.08);
+    border: 1px solid rgba(192,57,43,0.25); border-radius: 8px;
+    padding: 14px 18px; font-size: 13px; color: var(--error);
+    line-height: 1.6; margin-top: 16px;
+  }
+
+  /* Participant name for consent */
+  .consent-name-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin-bottom: 16px;
+  }
+  @media(max-width:480px){ .consent-name-row { grid-template-columns: 1fr; } }
+
+  .consent-field label {
+    display: block; font-size: 13px; font-weight: 500;
+    color: var(--text-mid); margin-bottom: 6px;
+  }
+  .consent-field input {
+    width: 100%; padding: 10px 14px;
+    border: 1.5px solid var(--border); border-radius: 8px;
+    font-family: 'DM Sans', sans-serif; font-size: 14px;
+    color: var(--text-dark); background: #fff;
+    transition: border-color 0.2s;
+  }
+  .consent-field input:focus {
+    outline: none; border-color: var(--light-teal);
+    box-shadow: 0 0 0 3px rgba(74,158,150,0.12);
+  }
+  .consent-field input.invalid { border-color: var(--error); }
+
+  /* ── FORM FIELDS (registration) ── */
+  .field { margin-bottom: 22px; }
+  .field:last-child { margin-bottom: 0; }
+  .field label {
+    display: block; font-size: 13px; font-weight: 500;
+    color: var(--text-mid); margin-bottom: 8px; letter-spacing: 0.2px;
+  }
+  .field label .required { color: var(--accent-gold); margin-left: 3px; }
+  .field label .hint { font-weight: 300; color: var(--text-light); font-size: 12px; }
+
+  input[type="text"], input[type="email"], input[type="tel"], select {
+    width: 100%; padding: 11px 14px;
+    border: 1.5px solid var(--border); border-radius: 8px;
+    font-family: 'DM Sans', sans-serif; font-size: 14px;
+    color: var(--text-dark); background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: none; -webkit-appearance: none;
+  }
+  input:focus, select:focus {
+    outline: none; border-color: var(--light-teal);
+    box-shadow: 0 0 0 3px rgba(74,158,150,0.12);
+  }
+  select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B8B88' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
+  }
+
+  .radio-group, .check-group { display: flex; flex-direction: column; gap: 10px; }
+  .radio-group.inline, .check-group.inline { flex-direction: row; flex-wrap: wrap; }
+
+  .radio-item, .check-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 11px 16px; border: 1.5px solid var(--border);
+    border-radius: 8px; cursor: pointer; transition: all 0.15s;
+    background: #fff; font-size: 14px; color: var(--text-dark);
+    user-select: none;
+  }
+  .radio-item:hover, .check-item:hover {
+    border-color: var(--light-teal); background: rgba(74,158,150,0.04);
+  }
+  .radio-item input, .check-item input { display: none; }
+  .radio-item.selected, .check-item.selected {
+    border-color: var(--deep-teal); background: rgba(26,74,71,0.05);
+    color: var(--deep-teal); font-weight: 500;
+  }
+  .custom-radio, .custom-check {
+    width: 18px; height: 18px; border: 2px solid var(--border);
+    border-radius: 50%; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.15s;
+  }
+  .custom-check { border-radius: 4px; }
+  .radio-item.selected .custom-radio,
+  .check-item.selected .custom-check {
+    border-color: var(--deep-teal); background: var(--deep-teal);
+  }
+  .custom-radio::after {
+    content: ''; width: 7px; height: 7px; border-radius: 50%;
+    background: #fff; opacity: 0; transition: opacity 0.15s;
+  }
+  .custom-check::after {
+    content: '✓'; color: #fff; font-size: 11px;
+    opacity: 0; transition: opacity 0.15s;
+  }
+  .radio-item.selected .custom-radio::after,
+  .check-item.selected .custom-check::after { opacity: 1; }
+
+  .scale-wrapper {
+    background: #fff; border: 1.5px solid var(--border);
+    border-radius: 8px; padding: 16px;
+  }
+  .scale-labels {
+    display: flex; justify-content: space-between;
+    font-size: 11px; color: var(--text-light); margin-bottom: 12px;
+  }
+  .scale-buttons { display: flex; gap: 6px; justify-content: space-between; }
+  .scale-btn {
+    flex: 1; aspect-ratio: 1; border: 1.5px solid var(--border);
+    border-radius: 6px; background: none; cursor: pointer;
+    font-size: 13px; font-family: 'DM Sans', sans-serif;
+    color: var(--text-mid); transition: all 0.15s;
+    display: flex; align-items: center; justify-content: center;
+    min-width: 0; padding: 0;
+  }
+  .scale-btn:hover { border-color: var(--light-teal); color: var(--deep-teal); }
+  .scale-btn.selected { background: var(--deep-teal); border-color: var(--deep-teal); color: #fff; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media(max-width:480px){ .two-col { grid-template-columns: 1fr; } }
+
+  .field-error { font-size: 12px; color: var(--error); margin-top: 6px; display: none; }
+  input.invalid, select.invalid { border-color: var(--error); }
+
+  /* ── BUTTONS ── */
+  .primary-btn {
+    width: 100%; padding: 16px;
+    background: var(--deep-teal); color: #fff;
+    border: none; border-radius: 10px;
+    font-family: 'DM Sans', sans-serif; font-size: 15px;
+    font-weight: 500; cursor: pointer; transition: all 0.2s;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    margin-top: 8px;
+  }
+  .primary-btn:hover {
+    background: var(--mid-teal); transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(26,74,71,0.25);
+  }
+  .primary-btn:disabled {
+    background: #aaa; cursor: not-allowed; transform: none; box-shadow: none;
+  }
+  .primary-btn .arrow { font-size: 18px; transition: transform 0.2s; }
+  .primary-btn:hover:not(:disabled) .arrow { transform: translateX(4px); }
+
+  .gold-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--accent-gold); color: #fff;
+    padding: 14px 28px; border-radius: 10px;
+    text-decoration: none; font-size: 15px; font-weight: 500;
+    transition: all 0.2s; border: none; cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .gold-btn:hover {
+    background: #B8832E; transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(196,145,58,0.3);
+  }
+
+  /* info box */
+  .info-box {
+    background: var(--warm-white); border: 1px solid var(--border);
+    border-left: 4px solid var(--light-teal); border-radius: 8px;
+    padding: 16px 20px; margin-bottom: 24px;
+    font-size: 13.5px; color: var(--text-mid); line-height: 1.7;
+  }
+  .info-box strong { color: var(--deep-teal); }
+
+  /* ── SUCCESS SCREEN ── */
+  .success-screen {
+    text-align: center; padding: 60px 24px;
+  }
+  .success-icon {
+    width: 72px; height: 72px; background: var(--deep-teal);
+    border-radius: 50%; display: flex; align-items: center;
+    justify-content: center; margin: 0 auto 24px; font-size: 32px;
+  }
+  .success-screen h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px; font-weight: 400; color: var(--deep-teal); margin-bottom: 12px;
+  }
+  .success-screen p {
+    color: var(--text-mid); font-size: 14px; line-height: 1.7;
+    max-width: 440px; margin: 0 auto 32px;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--deep-teal); text-align: center;
+    padding: 24px; font-size: 12px;
+    color: rgba(255,255,255,0.5); line-height: 1.7;
+  }
+  .footer a { color: var(--soft-gold); text-decoration: none; }
+
+  hr.divider { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-inner">
+    <div class="study-tag">PhD Research Study · Liverpool Hope University</div>
+    <h1>Your Voice Matters in <em>Maternal Healthcare</em></h1>
+    <p>We are inviting migrant and refugee women to share their experiences of communication during maternity care in the UK. Your experiences can help improve care for women like you.</p>
+    <div class="researcher-tag">
+      <span class="dot"></span>
+      Researcher: Dorcas Adebayo · 24013036&#64;hope.ac.uk
+    </div>
+  </div>
+</div>
+
+<!-- PROGRESS BAR -->
+<div class="progress-bar">
+  <div class="step active" id="prog-1">
+    <div class="step-num">1</div>
+    <span>Study Information</span>
+  </div>
+  <div class="step-divider"></div>
+  <div class="step" id="prog-2">
+    <div class="step-num">2</div>
+    <span>Consent Form</span>
+  </div>
+  <div class="step-divider"></div>
+  <div class="step" id="prog-3">
+    <div class="step-num">3</div>
+    <span>Your Details</span>
+  </div>
+  <div class="step-divider"></div>
+  <div class="step" id="prog-4">
+    <div class="step-num">4</div>
+    <span>Book Appointment</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE 1 — INFORMATION SHEET
+═══════════════════════════════════════════ -->
+<div class="page active" id="page-1">
+<div class="container">
+
+  <div class="info-box">
+    <strong>Step 1 of 3:</strong> Please read the study information below carefully before continuing. You can also download a copy to keep. After reading, you will be asked to complete a consent form.
+  </div>
+
+  <div class="card">
+    <div class="uni-header">
+      <div class="uni-name">Liverpool Hope University</div>
+      <div class="doc-title">Research Information Sheet</div>
+      <div class="study-title">Communicative Experiences of Refugee and Migrant Women<br>Accessing Maternal Healthcare in the United Kingdom</div>
+    </div>
+
+    <div class="info-section">
+      <div class="info-question">About This Research</div>
+      <div class="info-text">
+        This research examines the experiences of communication in maternity care among refugee and migrant women in the UK. It focuses on how women understand the way healthcare professionals talk about pain, medical procedures, and consent, and how this communication affects their understanding, feelings and trust during pregnancy and childbirth.
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="info-section">
+      <div class="info-question">Who is the Researcher?</div>
+      <div class="info-text">
+        <strong>Name:</strong> Dorcas Adebayo<br>
+        <strong>Institution:</strong> Liverpool Hope University<br>
+        <strong>Email:</strong> <a href="mailto:24013036@hope.ac.uk" style="color:var(--deep-teal)">24013036&#64;hope.ac.uk</a>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="info-section">
+      <div class="info-question">What Will My Participation Involve?</div>
+      <div class="info-text">
+        If you choose to take part, you will be invited to take part in either:
+        <ul>
+          <li>A one-to-one interview, <strong>or</strong></li>
+          <li>A small focus group discussion.</li>
+        </ul>
+        <br>
+        You will be asked open questions about your experiences of communication with healthcare professionals during pregnancy and childbirth. This includes how information about pain, medical procedures and consent were explained to you, how you understood this information and how it made you feel.
+        <br><br>
+        There are no right or wrong answers. You may choose what you want to share. Sessions will last approximately <strong>30–45 minutes</strong> (interviews) or <strong>60–90 minutes</strong> (focus groups). Discussions will be <strong>audio-recorded only with your permission</strong>.
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="info-section">
+      <div class="info-question">Will There Be Any Benefits to Me?</div>
+      <div class="info-text">
+        There may be no direct personal benefit to you from taking part. However, some people find it helpful to reflect on their experiences and feel that their voices are being heard.
+        <br><br>
+        Moreover, your contribution may help improve understanding of how maternity care communication is experienced by refugee and migrant women, which could support more sensitive and respectful communication practices in the future.
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="info-section">
+      <div class="info-question">Will There Be Any Risks to Me?</div>
+      <div class="info-text">
+        This study involves minimal risk. Some participants may feel emotional discomfort when talking about personal experiences of pregnancy and childbirth.
+        <br><br>
+        You do not have to answer any questions that make you uncomfortable. You may pause, skip questions, or stop the discussion at any time. If you feel upset, the session can be stopped and you will be offered information about support services if needed.
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="info-section">
+      <div class="info-question">What If I Want to Withdraw?</div>
+      <div class="info-text">
+        Taking part is completely voluntary. You are free to:
+        <ul>
+          <li>Stop taking part at any time</li>
+          <li>Withdraw from the study without giving a reason</li>
+          <li>Ask for your information to be removed <strong>up to two weeks after participation</strong></li>
+        </ul>
+        <br>
+        After this time, it may not be possible to remove your information because it will have been anonymised. Choosing not to take part or withdrawing will <strong>not affect any healthcare or support services</strong> you currently receive.
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="info-section">
+      <div class="info-question">How Will My Contribution Be Kept Anonymous?</div>
+      <div class="info-text">
+        Your privacy will be protected at all times:
+        <ul>
+          <li>Your name will not appear in any transcripts or reports.</li>
+          <li>A pseudonym (a made-up name or number) will be used instead of your real name.</li>
+          <li>Any details that could identify you (such as specific locations or people) will be removed or changed.</li>
+          <li>All information will be stored securely and only accessed by the researcher and academic supervisors.</li>
+          <li>No information that could identify you will be included in the thesis, reports, or publications.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="warning-box">
+      <strong>Please note:</strong> Your confidentiality and anonymity cannot be assured if, during the research, it comes to light that you are involved in illegal or harmful behaviours which the researcher may need to disclose to the appropriate authorities.
+    </div>
+  </div>
+
+  <!-- Download row -->
+  <div class="download-row">
+    <p>📄 Download a copy of this information sheet to keep for your records</p>
+    <button class="download-btn" onclick="downloadInfoSheet()">⬇ Download PDF</button>
+  </div>
+
+  <button class="primary-btn" onclick="goToPage(2)">
+    I have read this information — Continue to Consent Form <span class="arrow">→</span>
+  </button>
+
+</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     PAGE 2 — CONSENT FORM
+═══════════════════════════════════════════ -->
+<div class="page" id="page-2">
+<div class="container">
+
+  <div class="info-box">
+    <strong>Step 2 of 3:</strong> Please read each statement below carefully and select <strong>Yes</strong> or <strong>No</strong>. You must select <strong>Yes</strong> to all statements to continue. If you have any questions before consenting, please contact Dorcas at <a href="mailto:24013036@hope.ac.uk" style="color:var(--deep-teal)">24013036&#64;hope.ac.uk</a>.
+  </div>
+
+  <div class="card">
+    <div class="uni-header">
+      <div class="uni-name">Liverpool Hope University</div>
+      <div class="doc-title">Research Consent Form</div>
+      <div class="study-title">Communicative Experiences of Refugee and Migrant Women<br>Accessing Maternal Healthcare in the United Kingdom</div>
+    </div>
+
+    <!-- Participant name -->
+    <div class="consent-name-row">
+      <div class="consent-field">
+        <label>Your full name <span style="color:var(--accent-gold)">*</span></label>
+        <input type="text" id="consentName" placeholder="As you would like it recorded">
+      </div>
+      <div class="consent-field">
+        <label>Today's date</label>
+        <input type="text" id="consentDate" readonly style="background:#f5f5f5;color:var(--text-mid)">
+      </div>
+    </div>
+    <div style="background:rgba(74,158,150,0.08);border:1px solid rgba(74,158,150,0.25);border-radius:8px;padding:14px 18px;font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:20px;">
+      🔒 <strong style="color:var(--deep-teal)">Your name will not be published or included in any analysis.</strong> The researcher only needs your name for logistical purposes — for example, to confirm your appointment. Your name will be removed from all data no later than <strong>two weeks after your participation</strong> and replaced with a pseudonym throughout the research.
+    </div>
+
+    <hr class="divider">
+
+    <!-- Statement 1 -->
+    <div class="consent-statement" id="stmt-1">
+      <div><span class="statement-num">1</span></div>
+      <div class="statement-text">
+        I confirm that I have read and understand the information sheet for the above research project and have had the opportunity to ask questions.
+      </div>
+      <div class="yn-buttons">
+        <button class="yn-btn yes-btn" onclick="setConsent(1,'yes')">✓ Yes</button>
+        <button class="yn-btn no-btn" onclick="setConsent(1,'no')">✗ No</button>
+      </div>
+    </div>
+
+    <!-- Statement 2 -->
+    <div class="consent-statement" id="stmt-2">
+      <div><span class="statement-num">2</span></div>
+      <div class="statement-text">
+        I understand that my participation is voluntary and that I am free to withdraw my data until the time specified, without giving any reason.
+      </div>
+      <div class="yn-buttons">
+        <button class="yn-btn yes-btn" onclick="setConsent(2,'yes')">✓ Yes</button>
+        <button class="yn-btn no-btn" onclick="setConsent(2,'no')">✗ No</button>
+      </div>
+    </div>
+
+    <!-- Statement 3 -->
+    <div class="consent-statement" id="stmt-3">
+      <div><span class="statement-num">3</span></div>
+      <div class="statement-text">
+        I agree to take part in this research project and for the anonymised data to be used as the researcher sees fit, including publication.
+      </div>
+      <div class="yn-buttons">
+        <button class="yn-btn yes-btn" onclick="setConsent(3,'yes')">✓ Yes</button>
+        <button class="yn-btn no-btn" onclick="setConsent(3,'no')">✗ No</button>
+      </div>
+    </div>
+
+    <!-- Statement 4 -->
+    <div class="consent-statement" id="stmt-4">
+      <div><span class="statement-num">4</span></div>
+      <div class="statement-text">
+        I agree for the interview / focus group discussion to be audio-recorded.
+      </div>
+      <div class="yn-buttons">
+        <button class="yn-btn yes-btn" onclick="setConsent(4,'yes')">✓ Yes</button>
+        <button class="yn-btn no-btn" onclick="setConsent(4,'no')">✗ No</button>
+      </div>
+    </div>
+
+    <!-- Alert if No selected -->
+    <div class="consent-alert" id="consentAlert">
+      ⚠ Thank you for your honesty. Unfortunately, participation in this study requires agreement to all statements. If you have questions or concerns, please contact Dorcas Adebayo at <a href="mailto:24013036@hope.ac.uk" style="color:var(--error)">24013036&#64;hope.ac.uk</a> before deciding.
+    </div>
+
+    <!-- Alert if name missing -->
+    <div class="field-error" id="err-consentName" style="margin-top:8px">Please enter your name to confirm consent</div>
+
+  </div>
+
+  <button class="primary-btn" id="consentContinueBtn" onclick="submitConsent()">
+    I Consent — Continue to Registration <span class="arrow">→</span>
+  </button>
+
+</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     PAGE 3 — REGISTRATION FORM
+═══════════════════════════════════════════ -->
+<div class="page" id="page-3">
+<div class="container">
+
+  <div class="info-box">
+    <strong>Step 3 of 3:</strong> Please complete the form below. After submitting, you will be taken to a scheduling page to book your interview at a time that suits you.
+  </div>
+
+  <form id="participantForm" novalidate>
+
+    <!-- About You -->
+    <div class="card">
+      <div class="section-label">
+        <div class="section-icon">👤</div>
+        <div class="section-title">About You</div>
+      </div>
+
+      <div class="two-col">
+        <div class="field">
+          <label>First name <span class="required">*</span></label>
+          <input type="text" id="firstName" placeholder="e.g. Amina" required>
+          <div class="field-error" id="err-firstName">Please enter your first name</div>
+        </div>
+        <div class="field">
+          <label>Last name <span class="required">*</span></label>
+          <input type="text" id="lastName" placeholder="e.g. Hassan" required>
+          <div class="field-error" id="err-lastName">Please enter your last name</div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:flex-start;gap:10px;background:rgba(196,145,58,0.08);border:1px solid rgba(196,145,58,0.25);border-radius:8px;padding:14px 16px;margin-bottom:8px;">
+        <span style="font-size:18px;flex-shrink:0;margin-top:1px;">🔒</span>
+        <p style="font-size:12.5px;color:var(--text-mid);line-height:1.7;margin:0;">
+          <strong style="color:var(--deep-teal);">Your name is only used for logistics.</strong>
+          It will never appear in the research, analysis, or any publications. A pseudonym will be used in its place throughout the study. Your name will be permanently removed from all data no later than <strong>two weeks after your participation</strong>.
+        </p>
+      </div>
+
+      <div class="field">
+        <label>Email address <span class="required">*</span> <span class="hint">— for your appointment confirmation</span></label>
+        <input type="email" id="email" placeholder="yourname@email.com" required>
+        <div class="field-error" id="err-email">Please enter a valid email address</div>
+      </div>
+
+      <div class="field">
+        <label>Phone number <span class="hint">— optional, for appointment reminders</span></label>
+        <input type="tel" id="phone" placeholder="+44 7700 000000">
+      </div>
+
+      <div class="two-col">
+        <div class="field">
+          <label>Age <span class="required">*</span></label>
+          <select id="age" required>
+            <option value="">Select…</option>
+            <option>18–24</option><option>25–34</option>
+            <option>35–44</option><option>45 and over</option>
+          </select>
+          <div class="field-error" id="err-age">Please select your age range</div>
+        </div>
+        <div class="field">
+          <label>Country of birth <span class="required">*</span></label>
+          <input type="text" id="countryOfBirth" placeholder="e.g. Nigeria" required>
+          <div class="field-error" id="err-countryOfBirth">Please enter your country of birth</div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Ethnicity <span class="hint">— as you would describe it</span></label>
+        <input type="text" id="ethnicity" placeholder="e.g. Black African, Arab, South Asian…">
+      </div>
+    </div>
+
+    <!-- Language -->
+    <div class="card">
+      <div class="section-label">
+        <div class="section-icon">🗣️</div>
+        <div class="section-title">Language & Communication</div>
+      </div>
+
+      <div class="field">
+        <label>First language <span class="required">*</span></label>
+        <input type="text" id="firstLanguage" placeholder="e.g. Arabic, Yoruba, Somali…" required>
+        <div class="field-error" id="err-firstLanguage">Please enter your first language</div>
+      </div>
+
+      <div class="field">
+        <label>How confident are you speaking and understanding English? <span class="required">*</span></label>
+        <div class="scale-wrapper">
+          <div class="scale-labels">
+            <span>1 — Not confident at all</span>
+            <span>10 — Very confident</span>
+          </div>
+          <div class="scale-buttons" id="englishScale">
+            <button type="button" class="scale-btn" data-val="1" onclick="selectScale(this,'englishScale','englishScore')">1</button>
+            <button type="button" class="scale-btn" data-val="2" onclick="selectScale(this,'englishScale','englishScore')">2</button>
+            <button type="button" class="scale-btn" data-val="3" onclick="selectScale(this,'englishScale','englishScore')">3</button>
+            <button type="button" class="scale-btn" data-val="4" onclick="selectScale(this,'englishScale','englishScore')">4</button>
+            <button type="button" class="scale-btn" data-val="5" onclick="selectScale(this,'englishScale','englishScore')">5</button>
+            <button type="button" class="scale-btn" data-val="6" onclick="selectScale(this,'englishScale','englishScore')">6</button>
+            <button type="button" class="scale-btn" data-val="7" onclick="selectScale(this,'englishScale','englishScore')">7</button>
+            <button type="button" class="scale-btn" data-val="8" onclick="selectScale(this,'englishScale','englishScore')">8</button>
+            <button type="button" class="scale-btn" data-val="9" onclick="selectScale(this,'englishScale','englishScore')">9</button>
+            <button type="button" class="scale-btn" data-val="10" onclick="selectScale(this,'englishScale','englishScore')">10</button>
+          </div>
+        </div>
+        <input type="hidden" id="englishScore" required>
+        <div class="field-error" id="err-englishScore">Please select your English confidence level</div>
+      </div>
+
+      <div class="field">
+        <label>Do you usually need an interpreter for hospital appointments? <span class="required">*</span></label>
+        <div class="radio-group inline" id="interpreterGroup">
+          <label class="radio-item" onclick="selectRadio(this,'interpreterGroup','interpreterNeed')">
+            <input type="radio" name="interpreter" value="Yes, always">
+            <span class="custom-radio"></span> Yes, always
+          </label>
+          <label class="radio-item" onclick="selectRadio(this,'interpreterGroup','interpreterNeed')">
+            <input type="radio" name="interpreter" value="Yes, sometimes">
+            <span class="custom-radio"></span> Yes, sometimes
+          </label>
+          <label class="radio-item" onclick="selectRadio(this,'interpreterGroup','interpreterNeed')">
+            <input type="radio" name="interpreter" value="No">
+            <span class="custom-radio"></span> No
+          </label>
+        </div>
+        <input type="hidden" id="interpreterNeed" required>
+        <div class="field-error" id="err-interpreterNeed">Please select an option</div>
+      </div>
+    </div>
+
+    <!-- Pain Expression -->
+    <div class="card">
+      <div class="section-label">
+        <div class="section-icon">💬</div>
+        <div class="section-title">Expressing Pain in Your Language</div>
+      </div>
+
+      <div class="info-box" style="margin-bottom:24px">
+        This section helps us understand how pain is described across different cultures and languages. There are <strong>no right or wrong answers</strong> — we are simply interested in how you naturally express pain or discomfort in your mother tongue, and how you would describe the same feeling in English.
+      </div>
+
+      <div id="painExpressionRows">
+        <!-- Row 1 -->
+        <div class="pain-row" id="pain-row-1">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+            <div style="font-size:13px;font-weight:600;color:var(--deep-teal);">Expression 1</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:8px;">
+            <div>
+              <label style="display:block;font-size:12px;font-weight:500;color:var(--text-mid);margin-bottom:6px;">
+                In your mother tongue <span style="color:var(--accent-gold)">*</span>
+                <span style="font-weight:300;color:var(--text-light);font-size:11px;"> — write in your own script or letters</span>
+              </label>
+              <input type="text" class="pain-mother-tongue" placeholder="e.g. inú ń dùn mi (Yoruba)" style="width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-dark);background:#fff;">
+            </div>
+            <div>
+              <label style="display:block;font-size:12px;font-weight:500;color:var(--text-mid);margin-bottom:6px;">
+                Closest meaning in English
+                <span style="font-weight:300;color:var(--text-light);font-size:11px;"> — even if not a perfect match</span>
+              </label>
+              <input type="text" class="pain-english-equiv" placeholder="e.g. My stomach is hurting me" style="width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-dark);background:#fff;">
+            </div>
+          </div>
+          <div>
+            <label style="display:block;font-size:12px;font-weight:500;color:var(--text-mid);margin-bottom:6px;">
+              Any notes about this expression <span style="font-weight:300;color:var(--text-light);font-size:11px;"> — optional, e.g. does it mean something specific culturally?</span>
+            </label>
+            <input type="text" class="pain-notes" placeholder="e.g. This phrase also suggests the pain is caused by worry or emotional stress" style="width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-dark);background:#fff;">
+          </div>
+          <hr style="border:none;border-top:1px solid var(--border);margin:18px 0;">
+        </div>
+
+        <!-- Row 2 -->
+        <div class="pain-row" id="pain-row-2">
+          <div style="font-size:13px;font-weight:600;color:var(--deep-teal);margin-bottom:10px;">Expression 2</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:8px;">
+            <input type="text" class="pain-mother-tongue" placeholder="Another expression in your language" style="width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-dark);background:#fff;">
+            <input type="text" class="pain-english-equiv" placeholder="Closest English meaning" style="width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-dark);background:#fff;">
+          </div>
+          <input type="text" class="pain-notes" placeholder="Any cultural notes (optional)" style="width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-dark);background:#fff;">
+          <hr style="border:none;border-top:1px solid var(--border);margin:18px 0;">
+        </div>
+
+        <!-- Row 3 -->
+        <div class="pain-row" id="pain-row-3">
+          <div style="font-size:13px;font-weight:600;color:var(--deep-teal);margin-bottom:10px;">Expression 3</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:8px;">
+            <input type="text" class="pain-mother-tongue" placeholder="Another expression in your language" style="width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-dark);background:#fff;">
+            <input type="text" class="pain-english-equiv" placeholder="Closest English meaning" style="width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-dark);background:#fff;">
+          </div>
+          <input type="text" class="pain-notes" placeholder="Any cultural notes (optional)" style="width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-dark);background:#fff;">
+        </div>
+      </div>
+
+      <button type="button" onclick="addPainRow()" style="margin-top:20px;display:inline-flex;align-items:center;gap:8px;background:none;border:1.5px dashed var(--light-teal);color:var(--mid-teal);padding:10px 20px;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;transition:all 0.15s;">
+        + Add another expression
+      </button>
+
+      <input type="hidden" id="painExpressions">
+
+    </div>
+
+    <!-- Background -->
+    <div class="card">
+      <div class="section-label">
+        <div class="section-icon">🌍</div>
+        <div class="section-title">Your Background in the UK</div>
+      </div>
+
+      <div class="field">
+        <label>How long have you lived in the UK? <span class="required">*</span></label>
+        <select id="lengthOfStay" required>
+          <option value="">Select…</option>
+          <option>Less than 1 year</option><option>1–3 years</option>
+          <option>4–6 years</option><option>7–10 years</option>
+          <option>More than 10 years</option>
+        </select>
+        <div class="field-error" id="err-lengthOfStay">Please select your length of stay</div>
+      </div>
+
+      <div class="field">
+        <label>How did you come to the UK? <span class="required">*</span></label>
+        <div class="radio-group" id="migrationGroup">
+          <label class="radio-item" onclick="selectRadio(this,'migrationGroup','migrationStatus')">
+            <input type="radio" name="migration" value="As a refugee or asylum seeker">
+            <span class="custom-radio"></span> As a refugee or asylum seeker
+          </label>
+          <label class="radio-item" onclick="selectRadio(this,'migrationGroup','migrationStatus')">
+            <input type="radio" name="migration" value="For work or employment">
+            <span class="custom-radio"></span> For work or employment
+          </label>
+          <label class="radio-item" onclick="selectRadio(this,'migrationGroup','migrationStatus')">
+            <input type="radio" name="migration" value="For education or study">
+            <span class="custom-radio"></span> For education or study
+          </label>
+          <label class="radio-item" onclick="selectRadio(this,'migrationGroup','migrationStatus')">
+            <input type="radio" name="migration" value="To join family">
+            <span class="custom-radio"></span> To join family
+          </label>
+          <label class="radio-item" onclick="selectRadio(this,'migrationGroup','migrationStatus')">
+            <input type="radio" name="migration" value="Prefer not to say">
+            <span class="custom-radio"></span> Prefer not to say
+          </label>
+        </div>
+        <input type="hidden" id="migrationStatus" required>
+        <div class="field-error" id="err-migrationStatus">Please select an option</div>
+      </div>
+    </div>
+
+    <!-- Maternity Care -->
+    <div class="card">
+      <div class="section-label">
+        <div class="section-icon">🤱</div>
+        <div class="section-title">Your Maternity Care</div>
+      </div>
+
+      <div class="field">
+        <label>Is this your first child? <span class="required">*</span></label>
+        <div class="radio-group inline" id="firstChildGroup">
+          <label class="radio-item" onclick="selectRadio(this,'firstChildGroup','firstChild')">
+            <input type="radio" name="firstChild" value="Yes">
+            <span class="custom-radio"></span> Yes
+          </label>
+          <label class="radio-item" onclick="selectRadio(this,'firstChildGroup','firstChild')">
+            <input type="radio" name="firstChild" value="No">
+            <span class="custom-radio"></span> No
+          </label>
+        </div>
+        <input type="hidden" id="firstChild" required>
+        <div class="field-error" id="err-firstChild">Please select an option</div>
+      </div>
+
+      <div class="field">
+        <label>Which stage of maternity care are you currently in or recently experienced? <span class="hint">— tick all that apply</span></label>
+        <div class="check-group" id="careStageGroup">
+          <label class="check-item" onclick="toggleCheck(this,'careStages')">
+            <input type="checkbox" value="Pregnancy (antenatal care)">
+            <span class="custom-check"></span> Pregnancy (antenatal care)
+          </label>
+          <label class="check-item" onclick="toggleCheck(this,'careStages')">
+            <input type="checkbox" value="Labour and birth">
+            <span class="custom-check"></span> Labour and birth
+          </label>
+          <label class="check-item" onclick="toggleCheck(this,'careStages')">
+            <input type="checkbox" value="After birth (postnatal care)">
+            <span class="custom-check"></span> After birth (postnatal care)
+          </label>
+        </div>
+        <input type="hidden" id="careStages">
+      </div>
+
+      <div class="field">
+        <label>Where did you mainly receive your maternity care? <span class="required">*</span></label>
+        <div class="radio-group" id="careSettingGroup">
+          <label class="radio-item" onclick="selectRadio(this,'careSettingGroup','careSetting')">
+            <input type="radio" name="careSetting" value="GP / community clinic">
+            <span class="custom-radio"></span> GP / community clinic
+          </label>
+          <label class="radio-item" onclick="selectRadio(this,'careSettingGroup','careSetting')">
+            <input type="radio" name="careSetting" value="Hospital (antenatal clinic, labour ward, postnatal ward)">
+            <span class="custom-radio"></span> Hospital (antenatal clinic, labour ward, postnatal ward)
+          </label>
+          <label class="radio-item" onclick="selectRadio(this,'careSettingGroup','careSetting')">
+            <input type="radio" name="careSetting" value="Both community and hospital">
+            <span class="custom-radio"></span> Both community and hospital
+          </label>
+        </div>
+        <input type="hidden" id="careSetting" required>
+        <div class="field-error" id="err-careSetting">Please select an option</div>
+      </div>
+    </div>
+
+    <!-- Interview Preference -->
+    <div class="card">
+      <div class="section-label">
+        <div class="section-icon">📅</div>
+        <div class="section-title">Session Preference</div>
+      </div>
+
+      <div class="field">
+        <label>Which type of session would you like to take part in? <span class="required">*</span> <span class="hint">— you may choose both</span></label>
+        <div class="check-group" id="sessionTypeGroup">
+          <label class="check-item" onclick="toggleCheck(this,'sessionType')">
+            <input type="checkbox" value="Individual Interview (30–45 mins)">
+            <span class="custom-check"></span>
+            <span>
+              <strong>Individual Interview</strong>
+              <span style="display:block;font-size:12px;color:var(--text-light);font-weight:300;margin-top:2px">A private one-to-one conversation — 30 to 45 minutes</span>
+            </span>
+          </label>
+          <label class="check-item" onclick="toggleCheck(this,'sessionType')">
+            <input type="checkbox" value="Focus Group Discussion (60–90 mins)">
+            <span class="custom-check"></span>
+            <span>
+              <strong>Focus Group Discussion</strong>
+              <span style="display:block;font-size:12px;color:var(--text-light);font-weight:300;margin-top:2px">A small group discussion with other women — 60 to 90 minutes</span>
+            </span>
+          </label>
+        </div>
+        <input type="hidden" id="sessionType" required>
+        <div class="field-error" id="err-sessionType">Please select at least one session type</div>
+      </div>
+
+      <div class="field">
+        <label>How would you prefer to take part? <span class="required">*</span></label>
+        <div class="radio-group" id="interviewModeGroup">
+          <label class="radio-item" onclick="selectRadio(this,'interviewModeGroup','interviewMode')">
+            <input type="radio" name="interviewMode" value="In-person (Wirral Change office, Wirral)">
+            <span class="custom-radio"></span> In-person
+            <span style="color:var(--text-light);font-size:13px;margin-left:4px">— Wirral Change office, Wirral</span>
+          </label>
+          <label class="radio-item" onclick="selectRadio(this,'interviewModeGroup','interviewMode')">
+            <input type="radio" name="interviewMode" value="Online (Zoom)">
+            <span class="custom-radio"></span> Online
+            <span style="color:var(--text-light);font-size:13px;margin-left:4px">— via Zoom</span>
+          </label>
+        </div>
+        <input type="hidden" id="interviewMode" required>
+        <div class="field-error" id="err-interviewMode">Please select your preference</div>
+      </div>
+
+      <div class="info-box" style="margin-bottom:0">
+        After submitting, you will be taken to a booking page where you can choose a date and time that suits you. You will receive a Zoom link or location details in your confirmation email.
+      </div>
+    </div>
+
+    <button type="submit" class="primary-btn">
+      Submit and Book My Appointment <span class="arrow">→</span>
+    </button>
+  </form>
+
+  <!-- Success -->
+  <div class="success-screen" id="successScreen" style="display:none">
+    <div class="success-icon">🎉</div>
+    <h2>Thank you for registering!</h2>
+    <p>Your information has been saved securely. The next step is to book your session. Please choose the option that applies to you below.</p>
+
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:480px;margin:0 auto 32px;">
+
+      <!-- Individual Interview -->
+      <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:12px;padding:24px;">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--deep-teal);margin-bottom:6px;">
+          🎙 Individual Interview
+        </div>
+        <div style="font-size:13px;color:var(--text-light);margin-bottom:16px;line-height:1.6;">
+          A private one-to-one conversation with the researcher.<br>
+          <strong style="color:var(--text-mid)">Duration: 30–45 minutes · Online via Zoom</strong>
+        </div>
+        <a href="https://calendly.com/24013036-hope/30min" target="_blank" class="gold-btn" style="width:100%;justify-content:center;box-sizing:border-box;">
+          📅 Book Individual Interview →
+        </a>
+      </div>
+
+      <!-- Focus Group -->
+      <div style="background:var(--warm-white);border:1.5px solid var(--border);border-radius:12px;padding:24px;" id="focusGroupBookingCard">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--deep-teal);margin-bottom:6px;">
+          👥 Focus Group Discussion
+        </div>
+        <div style="font-size:13px;color:var(--text-light);margin-bottom:20px;line-height:1.6;">
+          A small group discussion with other women in the study.<br>
+          <strong style="color:var(--text-mid)">Duration: 60–90 minutes · Online via Zoom</strong><br>
+          <span style="color:var(--accent-gold);font-size:12px;">Maximum 4–5 participants per session</span>
+        </div>
+
+        <!-- Slot selection -->
+        <div style="font-size:13px;font-weight:500;color:var(--text-mid);margin-bottom:12px;">
+          Please select an available session:
+        </div>
+
+        <div id="fgSlotGroup" style="display:flex;flex-direction:column;gap:10px;margin-bottom:18px;"></div>
+
+        <div class="field-error" id="err-fgSlot" style="margin-bottom:10px;">Please select a session to continue</div>
+
+        <button type="button" class="gold-btn" style="width:100%;justify-content:center;box-sizing:border-box;" onclick="submitFocusGroupSlot()">
+          ✅ Confirm My Focus Group Session →
+        </button>
+
+        <!-- Confirmation message (hidden until submitted) -->
+        <div id="fgConfirmation" style="display:none;margin-top:16px;background:rgba(45,110,104,0.08);border:1px solid rgba(45,110,104,0.3);border-radius:8px;padding:14px 16px;font-size:13px;color:var(--deep-teal);line-height:1.7;">
+          <strong>✅ You are booked in!</strong><br>
+          <span id="fgConfirmationText"></span><br>
+          A confirmation email will be sent to you shortly. Please check your inbox.
+        </div>
+      </div>
+
+    </div>
+
+    <div style="background:rgba(26,74,71,0.05);border:1px solid var(--border);border-radius:8px;padding:16px 20px;max-width:480px;margin:0 auto;font-size:13px;color:var(--text-mid);line-height:1.7;text-align:left;">
+      <strong style="color:var(--deep-teal);">Not sure which to choose?</strong><br>
+      If you would like to share your experience privately, choose the individual interview. If you are happy to discuss your experiences with a small group of women, choose the focus group. You are welcome to do both if you wish.
+    </div>
+
+    <p style="margin-top:24px;font-size:13px;color:var(--text-light)">
+      Questions? Contact <a href="mailto:24013036@hope.ac.uk" style="color:var(--deep-teal)">24013036&#64;hope.ac.uk</a>
+    </p>
+  </div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  Liverpool Hope University · PhD Research in Applied Linguistics<br>
+  Researcher: Dorcas Adebayo · Ethics approved by Liverpool Hope University Ethics Committee<br>
+  Questions? <a href="mailto:24013036@hope.ac.uk" style="color:var(--deep-teal)">24013036&#64;hope.ac.uk</a>
+</div>
+
+
+<script>
+
+  // ══════════════════════════════════════════════════════════════
+  //  SETUP INSTRUCTIONS — READ BEFORE UPLOADING
+  //  Replace YOUR_APPS_SCRIPT_URL_HERE with your Apps Script URL
+  //  in TWO places below:
+  //  1. Inside the form submit handler (main registration data)
+  //  2. Inside submitFocusGroupSlot() (focus group booking data)
+  //  Both use the SAME Apps Script URL.
+  //  Your URL looks like: https://script.google.com/macros/s/XXXX/exec
+  // ══════════════════════════════════════════════════════════════
+
+  // ── Page navigation ──
+  function goToPage(n) {
+    try {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      const target = document.getElementById('page-' + n);
+      if (target) target.classList.add('active');
+      // Update progress bar
+      for (let i = 1; i <= 4; i++) {
+        const el = document.getElementById('prog-' + i);
+        if (el) {
+          el.classList.remove('active','done');
+          if (i < n) el.classList.add('done');
+          else if (i === n) el.classList.add('active');
+        }
+      }
+      // Scroll to top - try multiple methods for compatibility
+      try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch(e) {
+        try { window.scrollTo(0, 0); } catch(e2) {}
+      }
+    } catch(err) {
+      console.error('goToPage error:', err);
+    }
+  }
+
+// ── Set today's date on consent form ──
+  (function() {
+    try {
+      const dateEl = document.getElementById('consentDate');
+      if (dateEl) {
+        dateEl.value = new Date().toLocaleDateString('en-GB', {
+          day: 'numeric', month: 'long', year: 'numeric'
+        });
+      }
+    } catch(e) { console.warn('Date init error:', e); }
+  })();
+
+  // ── Consent Yes/No ──
+  const consentAnswers = { 1: null, 2: null, 3: null, 4: null };
+
+  function setConsent(num, val) {
+    consentAnswers[num] = val;
+    const stmt = document.getElementById('stmt-' + num);
+    const btns = stmt.querySelectorAll('.yn-btn');
+    btns[0].classList.remove('selected-yes','selected-no');
+    btns[1].classList.remove('selected-yes','selected-no');
+    if (val === 'yes') {
+      btns[0].classList.add('selected-yes');
+      stmt.classList.remove('answered-no'); stmt.classList.add('answered-yes');
+    } else {
+      btns[1].classList.add('selected-no');
+      stmt.classList.remove('answered-yes'); stmt.classList.add('answered-no');
+    }
+    // Show alert if any No
+    const hasNo = Object.values(consentAnswers).includes('no');
+    document.getElementById('consentAlert').style.display = hasNo ? 'block' : 'none';
+  }
+
+  function submitConsent() {
+    // Check name
+    const name = document.getElementById('consentName').value.trim();
+    if (!name) {
+      document.getElementById('err-consentName').style.display = 'block';
+      document.getElementById('consentName').classList.add('invalid');
+      return;
+    }
+    document.getElementById('err-consentName').style.display = 'none';
+    document.getElementById('consentName').classList.remove('invalid');
+
+    // Check all answered Yes
+    const allAnswered = Object.values(consentAnswers).every(v => v !== null);
+    const allYes = Object.values(consentAnswers).every(v => v === 'yes');
+
+    if (!allAnswered) {
+      alert('Please answer all consent statements before continuing.');
+      return;
+    }
+    if (!allYes) {
+      document.getElementById('consentAlert').style.display = 'block';
+      return;
+    }
+
+    // Pre-fill name in registration form
+    document.getElementById('firstName').value = name.split(' ')[0] || '';
+    document.getElementById('lastName').value = name.split(' ').slice(1).join(' ') || '';
+
+    goToPage(3);
+  }
+
+  // ── Add pain expression row ──
+  let painRowCount = 3;
+  function addPainRow() {
+    painRowCount++;
+    const container = document.getElementById('painExpressionRows');
+    const div = document.createElement('div');
+    div.className = 'pain-row';
+    div.id = 'pain-row-' + painRowCount;
+    div.innerHTML = `
+      <hr style="border:none;border-top:1px solid var(--border);margin:0 0 18px 0;">
+      <div style="font-size:13px;font-weight:600;color:var(--deep-teal);margin-bottom:10px;">Expression ${painRowCount}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:8px;">
+        <input type="text" class="pain-mother-tongue" placeholder="Expression in your language" style="width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-dark);background:#fff;">
+        <input type="text" class="pain-english-equiv" placeholder="Closest English meaning" style="width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-dark);background:#fff;">
+      </div>
+      <input type="text" class="pain-notes" placeholder="Any cultural notes (optional)" style="width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text-dark);background:#fff;">
+    `;
+    container.appendChild(div);
+  }
+
+  // ── Collect pain expressions ──
+  function collectPainExpressions() {
+    const rows = document.querySelectorAll('.pain-row');
+    const results = [];
+    rows.forEach((row, i) => {
+      const mt = row.querySelector('.pain-mother-tongue')?.value?.trim();
+      const en = row.querySelector('.pain-english-equiv')?.value?.trim();
+      const notes = row.querySelector('.pain-notes')?.value?.trim();
+      if (mt || en) {
+        results.push({
+          expression: i + 1,
+          motherTongue: mt || '',
+          englishEquivalent: en || '',
+          culturalNotes: notes || ''
+        });
+      }
+    });
+    return JSON.stringify(results);
+  }
+
+  // ── Radio ──
+  function selectRadio(el, groupId, hiddenId) {
+    document.querySelectorAll('#' + groupId + ' .radio-item').forEach(i => i.classList.remove('selected'));
+    el.classList.add('selected');
+    document.getElementById(hiddenId).value = el.querySelector('input').value;
+    clearError(hiddenId);
+  }
+
+  // ── Scale ──
+  function selectScale(btn, groupId, hiddenId) {
+    document.querySelectorAll('#' + groupId + ' .scale-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    document.getElementById(hiddenId).value = btn.dataset.val;
+    clearError(hiddenId);
+  }
+
+  // ── Checkbox ──
+  function toggleCheck(el, hiddenId) {
+    el.classList.toggle('selected');
+    const vals = [];
+    el.closest('.check-group').querySelectorAll('.check-item.selected input').forEach(i => vals.push(i.value));
+    if (document.getElementById(hiddenId)) document.getElementById(hiddenId).value = vals.join('; ');
+  }
+
+  // ── Clear error ──
+  function clearError(id) {
+    const e = document.getElementById('err-' + id);
+    if (e) e.style.display = 'none';
+    const f = document.getElementById(id);
+    if (f) f.classList.remove('invalid');
+  }
+
+  // ── Validate registration ──
+  function validateReg() {
+    const required = [
+      'firstName','lastName','email','age','countryOfBirth',
+      'firstLanguage','englishScore','interpreterNeed',
+      'lengthOfStay','migrationStatus','firstChild','careSetting',
+      'sessionType','interviewMode'
+    ];
+    let valid = true;
+    required.forEach(id => {
+      const el = document.getElementById(id);
+      if (!el || !el.value.trim()) {
+        const err = document.getElementById('err-' + id);
+        if (err) err.style.display = 'block';
+        if (el) el.classList.add('invalid');
+        valid = false;
+      }
+    });
+    const emailEl = document.getElementById('email');
+    if (emailEl && emailEl.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value)) {
+      document.getElementById('err-email').style.display = 'block';
+      emailEl.classList.add('invalid');
+      valid = false;
+    }
+    return valid;
+  }
+
+  // ── Collect all data ──
+  function collectData() {
+    return {
+      consentName: document.getElementById('consentName').value,
+      consentDate: document.getElementById('consentDate').value,
+      consentStatement1: consentAnswers[1],
+      consentStatement2: consentAnswers[2],
+      consentStatement3: consentAnswers[3],
+      consentStatement4: consentAnswers[4],
+      firstName: document.getElementById('firstName').value,
+      lastName: document.getElementById('lastName').value,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value,
+      age: document.getElementById('age').value,
+      countryOfBirth: document.getElementById('countryOfBirth').value,
+      ethnicity: document.getElementById('ethnicity').value,
+      firstLanguage: document.getElementById('firstLanguage').value,
+      englishScore: document.getElementById('englishScore').value,
+      interpreterNeed: document.getElementById('interpreterNeed').value,
+      lengthOfStay: document.getElementById('lengthOfStay').value,
+      migrationStatus: document.getElementById('migrationStatus').value,
+      firstChild: document.getElementById('firstChild').value,
+      careStages: document.getElementById('careStages').value,
+      careSetting: document.getElementById('careSetting').value,
+      sessionType: document.getElementById('sessionType').value,
+      interviewMode: document.getElementById('interviewMode').value,
+      painExpressions: collectPainExpressions(),
+      submittedAt: new Date().toISOString()
+    };
+  }
+
+  // ── Submit registration ──
+  // ── Wait for DOM then initialise ──
+  document.addEventListener('DOMContentLoaded', function() {
+    // Ensure page 1 is active on load
+    const page1 = document.getElementById('page-1');
+    if (page1) page1.classList.add('active');
+  });
+
+  document.getElementById('participantForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (!validateReg()) {
+      document.querySelector('#page-3 .field-error[style*="block"]')
+        ?.closest('.field')?.scrollIntoView({ behavior:'smooth', block:'center' });
+      return;
+    }
+    const data = collectData();
+    console.log('Participant data:', data);
+
+    // Replace with your Apps Script URL
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx_H-a4-BkYcY-b9VgUM3VKrsj3p7tuIBoVnAbl1An2ylMOVQ5mS_wat3J33MFIF6P3/exec';
+    if (APPS_SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbx_H-a4-BkYcY-b9VgUM3VKrsj3p7tuIBoVnAbl1An2ylMOVQ5mS_wat3J33MFIF6P3/exec') {
+      fetch(APPS_SCRIPT_URL, {
+        method: 'POST', mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+    }
+
+    document.getElementById('participantForm').style.display = 'none';
+    document.getElementById('successScreen').style.display = 'block';
+    document.getElementById('prog-3').classList.remove('active');
+    document.getElementById('prog-3').classList.add('done');
+    document.getElementById('prog-4').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+
+  // ── Focus Group Slots (Live from Google Sheets) ─────────────────
+  // Slot definitions — labels and IDs only. Availability is fetched
+  // live from Google Sheets via your Apps Script. To add a new slot,
+  // add a line here AND add the slot label to your Apps Script SLOTS list.
+  const FG_SLOTS_DEFINITION = [
+    { id:'fg1', label:'Saturday 25 April · 3:00 PM' },
+    { id:'fg2', label:'Sunday 26 April · 6:00 PM'   },
+    { id:'fg3', label:'Saturday 16 May · 3:00 PM'   },
+    { id:'fg4', label:'Sunday 17 May · 6:00 PM'     },
+    { id:'fg5', label:'Saturday 30 May · 3:00 PM'   },
+    { id:'fg6', label:'Sunday 31 May · 6:00 PM'     },
+  ];
+
+  const MAX_PER_SLOT = 5;
+  const APPS_SCRIPT_URL_FG = 'YOUR_APPS_SCRIPT_URL_HERE';
+
+  let selectedFgSlot = null;
+
+  // ── Fetch live availability from Apps Script ──
+  async function fetchSlotAvailability() {
+    if (APPS_SCRIPT_URL_FG === 'YOUR_APPS_SCRIPT_URL_HERE') {
+      // No URL set — return all slots as open (for local testing)
+      const mock = {};
+      FG_SLOTS_DEFINITION.forEach(s => { mock[s.id] = 0; });
+      return mock;
+    }
+    try {
+      const url = APPS_SCRIPT_URL_FG + '?action=getSlotCounts';
+      const resp = await fetch(url, { method:'GET', mode:'cors' });
+      const json = await resp.json();
+      return json.counts || {};
+    } catch(e) {
+      console.warn('Could not fetch slot availability:', e);
+      // On error, show all slots as open so participants are not blocked
+      const fallback = {};
+      FG_SLOTS_DEFINITION.forEach(s => { fallback[s.id] = 0; });
+      return fallback;
+    }
+  }
+
+  // ── Build slot UI with live counts ──
+  async function buildFgSlots() {
+    const container = document.getElementById('fgSlotGroup');
+    if (!container) return;
+
+    // Show loading state
+    container.innerHTML = '<div style="font-size:13px;color:var(--text-light);padding:12px;">Loading available sessions...</div>';
+
+    const counts = await fetchSlotAvailability();
+
+    container.innerHTML = '';
+    FG_SLOTS_DEFINITION.forEach(slot => {
+      const booked = counts[slot.id] || 0;
+      const spotsLeft = Math.max(0, MAX_PER_SLOT - booked);
+      const isFull = spotsLeft <= 0;
+
+      const div = document.createElement('div');
+      div.style.cssText = [
+        'display:flex', 'align-items:center', 'justify-content:space-between',
+        'padding:12px 16px',
+        'border:1.5px solid ' + (isFull ? '#eee' : 'var(--border)'),
+        'border-radius:8px',
+        'background:' + (isFull ? '#f9f9f9' : '#fff'),
+        'cursor:' + (isFull ? 'not-allowed' : 'pointer'),
+        'opacity:' + (isFull ? '0.5' : '1'),
+        'transition:all 0.15s',
+        'margin-bottom:4px'
+      ].join(';');
+
+      div.id = 'fgslot-' + slot.id;
+
+      const spotColour = isFull ? '#c00' : spotsLeft <= 2 ? '#C4913A' : 'var(--yes-green)';
+      const spotText = isFull ? 'Session full' : spotsLeft + ' spot' + (spotsLeft === 1 ? '' : 's') + ' left';
+
+      div.innerHTML = \`
+        <div>
+          <div style="font-size:14px;font-weight:500;color:\${isFull ? '#999' : 'var(--text-dark)'};">
+            \${slot.label}
+          </div>
+          <div style="font-size:12px;color:var(--text-light);margin-top:2px;">
+            Online via Zoom · 60–90 minutes
+          </div>
+        </div>
+        <div style="font-size:12px;font-weight:600;color:\${spotColour};white-space:nowrap;margin-left:12px;">
+          \${spotText}
+        </div>
+      \`;
+
+      if (!isFull) {
+        div.onclick = () => selectFgSlot(slot.id, slot.label, spotsLeft);
+        div.onmouseenter = function() {
+          if (selectedFgSlot?.id !== slot.id) {
+            this.style.borderColor = 'var(--light-teal)';
+            this.style.background = 'rgba(74,158,150,0.04)';
+          }
+        };
+        div.onmouseleave = function() {
+          if (selectedFgSlot?.id !== slot.id) {
+            this.style.borderColor = 'var(--border)';
+            this.style.background = '#fff';
+          }
+        };
+      }
+
+      container.appendChild(div);
+    });
+  }
+
+  function selectFgSlot(id, label, spotsLeft) {
+    selectedFgSlot = { id, label, spotsLeft };
+    // Reset all slots visually
+    document.querySelectorAll('#fgSlotGroup > div').forEach(d => {
+      d.style.borderColor = 'var(--border)';
+      d.style.background = '#fff';
+    });
+    // Highlight selected
+    const el = document.getElementById('fgslot-' + id);
+    if (el) {
+      el.style.borderColor = 'var(--deep-teal)';
+      el.style.background = 'rgba(26,74,71,0.06)';
+    }
+    document.getElementById('err-fgSlot').style.display = 'none';
+  }
+
+  async function submitFocusGroupSlot() {
+    if (!selectedFgSlot) {
+      document.getElementById('err-fgSlot').style.display = 'block';
+      return;
+    }
+
+    // Disable button to prevent double submission
+    const btn = document.querySelector('#focusGroupBookingCard button');
+    if (btn) { btn.disabled = true; btn.textContent = 'Booking...'; }
+
+    const bookingData = {
+      type: 'focus_group_booking',
+      slotId: selectedFgSlot.id,
+      slotLabel: selectedFgSlot.label,
+      participantEmail: document.getElementById('email')?.value || '',
+      participantName: (document.getElementById('firstName')?.value || '') + ' ' + (document.getElementById('lastName')?.value || ''),
+      bookedAt: new Date().toISOString()
+    };
+
+    // Send to Google Sheets
+    if (APPS_SCRIPT_URL_FG !== 'YOUR_APPS_SCRIPT_URL_HERE') {
+      try {
+        await fetch(APPS_SCRIPT_URL_FG, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(bookingData)
+        });
+      } catch(e) {
+        console.warn('Booking submission error:', e);
+      }
+    }
+
+    // Show confirmation
+    document.getElementById('fgConfirmationText').innerHTML =
+      'You have selected: <strong>' + selectedFgSlot.label + '</strong><br>' +
+      'You will receive a Zoom link by email before the session. Please save this date.';
+    document.getElementById('fgConfirmation').style.display = 'block';
+
+    // Hide slot selection and button
+    document.getElementById('fgSlotGroup').style.display = 'none';
+    if (btn) btn.style.display = 'none';
+    document.getElementById('err-fgSlot').style.display = 'none';
+  }
+
+  // Trigger slot loading when success screen appears
+  document.getElementById('participantForm').addEventListener('submit', function() {
+    setTimeout(buildFgSlots, 400);
+  });
+
+  // ── Download info sheet as text ──
+  function downloadInfoSheet() {
+    try {
+      const lines = [
+        'LIVERPOOL HOPE UNIVERSITY',
+        'RESEARCH INFORMATION SHEET',
+        '',
+        'Title: Communicative Experiences of Refugee and Migrant Women Accessing Maternal Healthcare in the United Kingdom',
+        'Researcher: Dorcas Adebayo | Liverpool Hope University | 24013036@hope.ac.uk',
+        '',
+        'ABOUT THIS RESEARCH',
+        'This research examines the experiences of communication in maternity care among refugee and migrant women in the UK.',
+        '',
+        'WHAT WILL MY PARTICIPATION INVOLVE?',
+        'You will be invited to take part in either a one-to-one interview or a small focus group discussion.',
+        'Sessions last approximately 30-45 minutes (interviews) or 60-90 minutes (focus groups).',
+        'Discussions will be audio-recorded only with your permission.',
+        '',
+        'WILL THERE BE ANY BENEFITS?',
+        'Your contribution may help improve understanding of maternity care communication for refugee and migrant women.',
+        '',
+        'WILL THERE BE ANY RISKS?',
+        'Minimal risk. You may pause, skip questions, or stop at any time.',
+        '',
+        'YOUR RIGHT TO WITHDRAW',
+        'You may stop at any time, withdraw without giving a reason, and ask for your data to be removed within two weeks.',
+        '',
+        'ANONYMITY',
+        'Your name will never appear in any reports. A pseudonym will be used throughout.',
+        'All data stored securely and accessed only by the researcher and supervisors.',
+        '',
+        'Contact: 24013036@hope.ac.uk | Liverpool Hope University'
+      ];
+      const text = lines.join('\n');
+      const encoded = encodeURIComponent(text);
+      const dataUri = 'data:text/plain;charset=utf-8,' + encoded;
+      const a = document.createElement('a');
+      a.href = dataUri;
+      a.download = 'Participant_Information_Sheet_Adebayo_2025.txt';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    } catch(e) {
+      console.warn('Download error:', e);
+      alert('Download failed. Please try again or contact 24013036@hope.ac.uk for the information sheet.');
+    }
+  }
+
+  // Clear errors on input
+  document.querySelectorAll('input, select').forEach(function(el) {
+    el.addEventListener('input', function() { clearError(el.id); });
+  });
+
+</script>
+</body>
+</html>
